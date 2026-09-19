@@ -86,7 +86,8 @@ def yaml_value(value: str) -> str:
 
 
 def load_rows(path: Path) -> list[dict[str, str]]:
-    with path.open(encoding="utf-8", newline="") as source_file:
+    # utf-8-sig accepts both regular UTF-8 and Excel-friendly UTF-8 with BOM.
+    with path.open(encoding="utf-8-sig", newline="") as source_file:
         reader = csv.DictReader(source_file)
         if not reader.fieldnames or "url" not in reader.fieldnames:
             raise ValueError("Input CSV must have a 'url' column.")
@@ -106,12 +107,16 @@ def robots_allowed(url: str, user_agent: str) -> bool:
         print(f"Skipping unsupported URL: {url}", file=sys.stderr)
         return False
     robots_url = f"{parsed.scheme}://{parsed.netloc}/robots.txt"
-    parser = RobotFileParser(robots_url)
     try:
-        parser.read()
+        request = Request(robots_url, headers={"User-Agent": user_agent, "Accept": "text/plain"})
+        with urlopen(request, timeout=20) as response:  # noqa: S310 - URL is supplied by the course user.
+            charset = response.headers.get_content_charset() or "utf-8"
+            rules = response.read().decode(charset, errors="replace")
     except (HTTPError, URLError, OSError) as error:
         print(f"Skipping {url}: cannot verify {robots_url} ({error})", file=sys.stderr)
         return False
+    parser = RobotFileParser(robots_url)
+    parser.parse(rules.splitlines())
     if not parser.can_fetch(user_agent, url):
         print(f"Skipping {url}: disallowed by robots.txt", file=sys.stderr)
         return False
@@ -138,12 +143,12 @@ def extract_content(body: str) -> tuple[str, str]:
 def existing_manifest(path: Path) -> dict[str, dict[str, str]]:
     if not path.exists():
         return {}
-    with path.open(encoding="utf-8", newline="") as manifest_file:
+    with path.open(encoding="utf-8-sig", newline="") as manifest_file:
         return {row["doc_id"]: row for row in csv.DictReader(manifest_file) if row.get("doc_id")}
 
 
 def write_manifest(path: Path, records: dict[str, dict[str, str]]) -> None:
-    with path.open("w", encoding="utf-8", newline="") as manifest_file:
+    with path.open("w", encoding="utf-8-sig", newline="") as manifest_file:
         writer = csv.DictWriter(manifest_file, fieldnames=MANIFEST_FIELDS)
         writer.writeheader()
         for doc_id in sorted(records):
