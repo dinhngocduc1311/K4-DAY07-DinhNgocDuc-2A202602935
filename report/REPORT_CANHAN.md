@@ -49,7 +49,7 @@ Giải thích cách tiếp cận của bạn khi lập trình (implement) các p
 ### Các hàm chia nhỏ (Chunking Functions)
 
 **Chiến lược benchmark cá nhân — `FixedSizeChunker`:**
-> Tôi dùng `chunk_size=300`, `overlap=30`. Mỗi bước tiến 270 ký tự; phần chồng lấp giúp thông tin nằm sát biên còn xuất hiện ở chunk kế tiếp. Tôi chỉ chunk phần thân Markdown, không chunk YAML frontmatter; mỗi chunk có ID dạng `doc_id#index` và kế thừa toàn bộ metadata của tài liệu gốc.
+> Tôi dùng `chunk_size=500`, `overlap=50`. Mỗi bước tiến 450 ký tự; phần chồng lấp giúp thông tin nằm sát biên còn xuất hiện ở chunk kế tiếp. Tôi chỉ chunk phần thân Markdown, không chunk YAML frontmatter; mỗi chunk có ID dạng `doc_id#index` và kế thừa toàn bộ metadata của tài liệu gốc.
 
 **`SentenceChunker.chunk`** — hướng tiếp cận:
 > Tôi dùng regex `(?<=[.!?])\s+`: positive lookbehind đặt điểm tách sau dấu câu nên vẫn giữ `.`, `!`, `?`. Các câu được gom theo `max_sentences_per_chunk`; chuỗi rỗng trả `[]` và tham số số câu được chặn tối thiểu là 1. Cách đơn giản này có thể cắt sai chữ viết tắt như “TS.”, “v.v.” hoặc số thập phân; nếu corpus có nhiều trường hợp đó thì cần bộ tách câu chuyên dụng hơn.
@@ -112,21 +112,50 @@ Checkpoint riêng cho chunking/similarity/comparator cũng đạt **23 passed, 1
 
 ## 5. Kết quả truy xuất của tôi (Competition Results) — Cá nhân (10 điểm)
 
-Tôi dùng `FixedSizeChunker(chunk_size=300, overlap=30)` trên phần thân của 8 tài liệu VinUni. Frontmatter được chuyển thành metadata cho từng chunk. Store nhận **50 chunks**, độ dài trung bình **277,7 ký tự**, và truy xuất với `top_k=3`.
+Tôi dùng `FixedSizeChunker(chunk_size=500, overlap=50)` trên phần thân của 8 tài liệu VinUni. Frontmatter được chuyển thành metadata cho từng chunk. Store nhận **31 chunks**, độ dài trung bình **444,3 ký tự**, và truy xuất với `top_k=3`.
 
-| # | Câu hỏi (rút gọn) | Top-1 sau filter (doc_id — score) | Hạng chunk chứa đáp án | Điểm | Đáp án grounded |
-|---|---|---|---:|---:|---|
-| 1 | Cổng SIS Spring 2026 mở lúc nào? | `lich-dang-ky-spring-2026` — 0.894064 | 1 | 2/2 | Mở lúc 14:00 ngày 18/12/2025 [1] |
-| 2 | Các bước đăng ký và trạng thái thành công? | `huong-dan-dang-ky-hoc-phan` — 0.806445 | 1 | 2/2 | Thực hiện trên SIS; phải ở trạng thái Registered, không phải Selected [1] |
-| 3 | Trùng giờ/chưa đủ tiên quyết xử lý thế nào? | `huong-dan-dang-ky-hoc-phan` — 0.803733 | 1 | 2/2 | SIS chặn môn trùng giờ hoặc chưa đạt tiên quyết [1] |
-| 4 | Giới hạn tín chỉ withdrawal? | `sinh-vien-add-drop-withdraw-spring-2026` — 0.831586 | 1 | 2/2 | Tối đa 18 tín chỉ; đạt giới hạn thì phải tiếp tục học và nhận điểm [1] |
-| 5 | Trước ngày giảng dạy, sinh viên kiểm tra gì? | `lich-dang-ky-spring-2026` — 0.796817 | 2 | 1/2 | Kiểm tra thời gian, địa điểm và SIS đồng bộ đúng lên Canvas [2] |
+| Câu | Hạng | `doc_id#chunk` | Score | Chunk chứa đáp án? |
+|---:|---:|---|---:|---|
+| Q1 | 1 | `lich-dang-ky-spring-2026#0` | 0.878719 | Có |
+| Q1 | 2 | `sinh-vien-add-drop-withdraw-spring-2026#0` | 0.778719 | Không |
+| Q1 | 3 | `giang-vien-kiem-tra-lich-spring-2026#0` | 0.760753 | Không |
+| Q2 | 1 | `huong-dan-dang-ky-hoc-phan#2` | 0.836555 | Có |
+| Q2 | 2 | `huong-dan-dang-ky-hoc-phan#1` | 0.811139 | Không |
+| Q2 | 3 | `huong-dan-dang-ky-hoc-phan#0` | 0.790896 | Không |
+| Q3 | 1 | `huong-dan-dang-ky-hoc-phan#3` | 0.791638 | Có |
+| Q3 | 2 | `huong-dan-dang-ky-hoc-phan#2` | 0.779361 | Không |
+| Q3 | 3 | `huong-dan-dang-ky-hoc-phan#1` | 0.746356 | Không |
+| Q4 | 1 | `sinh-vien-add-drop-withdraw-spring-2026#3` | 0.831586 | Có |
+| Q4 | 2 | `quy-dinh-hoc-thuat-dai-hoc#7` | 0.809109 | Có |
+| Q4 | 3 | `sinh-vien-add-drop-withdraw-spring-2026#2` | 0.799476 | Không |
+| Q5 | 1 | `lich-dang-ky-spring-2026#0` | 0.776053 | Không |
+| Q5 | 2 | `sinh-vien-add-drop-withdraw-spring-2026#0` | 0.772247 | Không |
+| Q5 | 3 | `huong-dan-dang-ky-hoc-phan#0` | 0.640615 | Không |
 
-**Tổng kết:** top-3 có chunk thực sự chứa đáp án **5/5**; điểm truy xuất **9/10**.
+| Câu | Hạng chunk chứa đáp án | Điểm | Đáp án grounded |
+|---|---:|---:|---|
+| Q1 | 1 | 2/2 | Mở lúc 14:00 ngày 18/12/2025 [1] |
+| Q2 | 1 | 2/2 | Thực hiện trên SIS; phải ở trạng thái Registered, không phải Selected [1] |
+| Q3 | 1 | 2/2 | SIS chặn môn trùng giờ hoặc chưa đạt tiên quyết [1] |
+| Q4 | 1 | 2/2 | Tối đa 18 tín chỉ; đạt giới hạn thì phải tiếp tục học và nhận điểm [1] |
+| Q5 | Không có trong top-3 | 0/2 | Không đủ thông tin trong context |
 
-**A/B metadata filter ở câu 5:** khi không lọc, top-1 là tài liệu dành cho giảng viên (`giang-vien-kiem-tra-lich-spring-2026`, score 0.864947), còn chunk sinh viên đúng đứng hạng 3. Với `metadata_filter={audience: student}`, tài liệu giảng viên bị loại trước retrieval và chunk đúng lên hạng 2. Filter tăng precision theo audience nhưng chưa đưa chunk trả lời lên top-1.
+**Tổng kết:** top-3 có chunk thực sự chứa đáp án **4/5**; điểm truy xuất **8/10**.
 
-**Failure case:** ở câu 5, metadata filter loại đúng tài liệu giảng viên nhưng top-1 vẫn là chunk lịch đăng ký; chunk thực sự trả lời về SIS/Canvas đứng hạng 2. Nếu chỉ chấm theo `doc_id` thì dễ đánh giá sai chất lượng. Có thể cải thiện bằng chunk theo heading hoặc diễn đạt query cụ thể hơn; khi so sánh giữa thành viên phải giữ nguyên query, top-k và embedding.
+**A/B metadata filter ở câu 5:**
+
+| Lượt chạy | Hạng | `doc_id#chunk` | Score | Chunk chứa đáp án? |
+|---|---:|---|---:|---|
+| Không filter | 1 | `giang-vien-kiem-tra-lich-spring-2026#0` | 0.846540 | Không |
+| Không filter | 2 | `lich-dang-ky-spring-2026#0` | 0.776053 | Không |
+| Không filter | 3 | `sinh-vien-add-drop-withdraw-spring-2026#0` | 0.772247 | Không |
+| `audience: student` | 1 | `lich-dang-ky-spring-2026#0` | 0.776053 | Không |
+| `audience: student` | 2 | `sinh-vien-add-drop-withdraw-spring-2026#0` | 0.772247 | Không |
+| `audience: student` | 3 | `huong-dan-dang-ky-hoc-phan#0` | 0.640615 | Không |
+
+Khi không lọc, top-1 là tài liệu dành cho giảng viên. Với `metadata_filter={audience: student}`, tài liệu giảng viên bị loại trước retrieval; tuy nhiên top-1 trở thành `lich-dang-ky-spring-2026` và chunk thực sự chứa thông tin SIS/Canvas vẫn không vào top-3. Filter tăng precision theo audience nhưng không tự bảo đảm lấy đúng section trả lời.
+
+**Failure case:** ở câu 5, metadata filter loại đúng tài liệu giảng viên nhưng top-3 chỉ lấy chunk 0 của tài liệu sinh viên; phần có SIS và Canvas nằm ở chunk 1. Nếu chỉ chấm theo `doc_id` thì sẽ báo đúng giả. Có thể cải thiện bằng chunk theo heading, tăng `top_k`, hoặc diễn đạt query cụ thể hơn; khi so sánh giữa thành viên phải giữ nguyên query, top-k và embedding.
 
 **Tính trung thực của phép đo:** lượt chạy chính thức dùng `gemini-embedding-001` (3072 chiều). Phần “đáp án grounded” trong `bench.py` chỉ trả gold answer khi top-3 có cùng một chunk chứa đủ chuỗi đặc trưng. Output đầy đủ nằm trong `ket_qua_benchmark.txt`.
 
@@ -142,5 +171,5 @@ Tôi dùng `FixedSizeChunker(chunk_size=300, overlap=30)` trên phần thân c�
 | Hướng tiếp cận của tôi (My Approach) | 10 / 10 |
 | Hoàn thiện code (Core Implementation — tests) | 30 / 30 |
 | Dự đoán độ tương tự (Similarity Predictions) | 5 / 5 |
-| Kết quả truy xuất của tôi (Competition Results) | 9 / 10 |
-| **Tổng phần cá nhân** | **59 / 60** |
+| Kết quả truy xuất của tôi (Competition Results) | 8 / 10 |
+| **Tổng phần cá nhân** | **58 / 60** |

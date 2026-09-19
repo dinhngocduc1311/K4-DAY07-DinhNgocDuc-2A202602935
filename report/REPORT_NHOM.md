@@ -24,19 +24,23 @@
 
 | #   | Tên tài liệu                                               | Nguồn (Source URL)                                                                                         | Ngày lấy / Phiên bản    | Số ký tự | Metadata đã gán                                                       |
 | --- | ---------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ----------------------- | -------- | --------------------------------------------------------------------- |
-| 1   | Biểu mẫu và đơn từ học vụ                                  | https://registrar.vinuni.edu.vn/vi/hoc-thuat-dich-vu/bieu-mau-don-tu/                                      | 2026-09-19 / not-stated | 1,846    | `audience: student`, `dept: registrar`, `cat: academic-requests`      |
-| 2   | Câu hỏi thường gặp về đăng ký học phần                     | https://registrar.vinuni.edu.vn/vi/nhung-cau-hoi-thuong-gap/                                               | 2026-09-19 / not-stated | 1,220    | `audience: student`, `dept: registrar`, `cat: faq`                    |
-| 3   | Hướng dẫn giảng viên kiểm tra lịch dạy kỳ Spring 2026      | https://registrar.vinuni.edu.vn/vi/2026/01/28/thong-bao-quan-trong-cho-hoc-ky-mua-xuan-2026/               | 2026-09-19 / 2026-01-28 | 778      | `audience: faculty`, `dept: registrar`, `cat: teaching-schedule`      |
-| 4   | Hướng dẫn thời khóa biểu và đăng ký học phần               | https://registrar.vinuni.edu.vn/vi/hoc-thuat-dich-vu/thoi-khoa-bieu-dang-ky-hoc-phan/                      | 2026-09-19 / not-stated | 1,746    | `audience: student`, `dept: registrar`, `cat: registration-guide`     |
-| 5   | Lịch đăng ký học phần kỳ Spring 2026                       | https://registrar.vinuni.edu.vn/vi/2025/12/15/thong-bao-chinh-thuc-ve-lich-dang-ky-mon-hoc-ky-spring-2026/ | 2026-09-19 / 2025-12-15 | 1,465    | `audience: student`, `dept: registrar`, `cat: registration-schedule`  |
-| 6   | Quy định học thuật chương trình đại học toàn thời gian     | https://policy.vinuni.edu.vn/all-policies/academic-regulations-for-full-time-undergraduate-programs/       | 2026-09-19 / V8.1       | 3,369    | `audience: student`, `dept: academic-affairs`, `cat: academic-policy` |
-| 7   | Hướng dẫn sinh viên Add, Drop và Withdrawal kỳ Spring 2026 | https://registrar.vinuni.edu.vn/vi/2026/01/28/thong-bao-quan-trong-cho-hoc-ky-mua-xuan-2026/               | 2026-09-19 / 2026-01-28 | 1,617    | `audience: student`, `dept: registrar`, `cat: add-drop-withdraw`      |
-| 8   | Vai trò Phòng Quản lý Đào tạo VinUni                       | https://registrar.vinuni.edu.vn/vi/trang-chu/                                                              | 2026-09-19 / not-stated | 583      | `audience: all`, `dept: registrar`, `cat: registrar-services`         |
+| 1   | Biểu mẫu và đơn từ học vụ                                  | https://registrar.vinuni.edu.vn/vi/hoc-thuat-dich-vu/bieu-mau-don-tu/                                      | 2026-09-19 / not-stated | 1,846    | `audience: student`, `department: registrar`, `category: academic-requests`      |
+| 2   | Câu hỏi thường gặp về đăng ký học phần                     | https://registrar.vinuni.edu.vn/vi/nhung-cau-hoi-thuong-gap/                                               | 2026-09-19 / not-stated | 1,220    | `audience: student`, `department: registrar`, `category: faq`                    |
+| 3   | Hướng dẫn giảng viên kiểm tra lịch dạy kỳ Spring 2026      | https://registrar.vinuni.edu.vn/vi/2026/01/28/thong-bao-quan-trong-cho-hoc-ky-mua-xuan-2026/               | 2026-09-19 / 2026-01-28 | 778      | `audience: faculty`, `department: registrar`, `category: teaching-schedule`      |
+| 4   | Hướng dẫn thời khóa biểu và đăng ký học phần               | https://registrar.vinuni.edu.vn/vi/hoc-thuat-dich-vu/thoi-khoa-bieu-dang-ky-hoc-phan/                      | 2026-09-19 / not-stated | 1,746    | `audience: student`, `department: registrar`, `category: registration-guide`     |
+| 5   | Lịch đăng ký học phần kỳ Spring 2026                       | https://registrar.vinuni.edu.vn/vi/2025/12/15/thong-bao-chinh-thuc-ve-lich-dang-ky-mon-hoc-ky-spring-2026/ | 2026-09-19 / 2025-12-15 | 1,465    | `audience: student`, `department: registrar`, `category: registration-schedule`  |
+| 6   | Quy định học thuật chương trình đại học toàn thời gian     | https://policy.vinuni.edu.vn/all-policies/academic-regulations-for-full-time-undergraduate-programs/       | 2026-09-19 / V8.1       | 3,369    | `audience: student`, `department: academic-affairs`, `category: academic-policy` |
+| 7   | Hướng dẫn sinh viên Add, Drop và Withdrawal kỳ Spring 2026 | https://registrar.vinuni.edu.vn/vi/2026/01/28/thong-bao-quan-trong-cho-hoc-ky-mua-xuan-2026/               | 2026-09-19 / 2026-01-28 | 1,617    | `audience: student`, `department: registrar`, `category: add-drop-withdraw`      |
+| 8   | Vai trò Phòng Quản lý Đào tạo VinUni                       | https://registrar.vinuni.edu.vn/vi/trang-chu/                                                              | 2026-09-19 / not-stated | 583      | `audience: all`, `department: registrar`, `category: registrar-services`         |
 
 **Danh sách kiểm tra quản trị dữ liệu (Data governance checklist):**
 
 - [x] Tập tài liệu (Corpus) chỉ chứa nguồn công khai/được phép dùng và không chứa dữ liệu cá nhân, thông tin đăng nhập hoặc tài liệu nội bộ.
 - [x] Mỗi tài liệu có `source_url`, `retrieved_at`, `document_version` (hoặc ngày hiệu lực) trong metadata.
+- [x] Có 8 file Markdown và 8 dòng trong `sources.csv`; `doc_id` duy nhất và khớp một-một với tên file.
+- [x] Corpus có ba giá trị `audience` (`student`, `faculty`, `all`) và mỗi tài liệu còn có `department`, `category`, `language`.
+- [x] Quy trình thu thập dùng crawler có kiểm tra `robots.txt`, đặt User-Agent và giãn cách request; nội dung được làm sạch menu, footer và tin liên quan trước khi benchmark.
+- [x] Trang thông báo Spring 2026 chứa cả nội dung sinh viên và giảng viên được tách thành hai file theo `audience`, giúp metadata filter có tác dụng thực tế.
 
 ### Cấu trúc Metadata (Metadata Schema)
 
@@ -47,6 +51,10 @@
 | `category`         | string | `registration-guide`, `faq`, `academic-policy` | Phân loại loại hình tài liệu (hướng dẫn thao tác, câu hỏi thường gặp, hay quy chế chính thức).        |
 | `document_version` | string | `2026-01-28`, `V8.1`, `not-stated`             | Xác thực tính hiệu lực và phiên bản cập nhật mới nhất của quy định.                                   |
 | `retrieved_at`     | string | `2026-09-19`                                   | Ghi nhận thời điểm thu thập dữ liệu phục vụ truy xuất nguồn gốc (provenance).                         |
+| `doc_id`           | string | `lich-dang-ky-spring-2026`                     | Định danh ổn định tài liệu gốc và liên kết mọi chunk về đúng nguồn.                                   |
+| `source_url`       | string | URL chính thức của VinUni                      | Cho phép kiểm chứng nội dung và truy vết provenance.                                                  |
+| `language`         | string | `vi`, `en`                                     | Hỗ trợ chọn hoặc đánh giá embedding đa ngữ.                                                           |
+| `license_or_permission` | string | `public-source`                           | Ghi căn cứ sử dụng trong `sources.csv`, tránh đưa nguồn không rõ quyền vào corpus.                     |
 
 ---
 
@@ -91,7 +99,7 @@ chunks = chunker.chunk(document_text)
 **Thành viên 2 — Đoàn Tuấn Long (R2)**
 
 - **Loại chiến lược:** SentenceChunker (`max_sentences_per_chunk=3`)
-- **Mô tả & lý do chọn:** Nhận diện ranh giới câu thông qua biểu thức chính quy (Regex: `[.!?]`) và gom tối đa 3 câu vào một khối. Chiến lược này đảm bảo mỗi chunk là một phát biểu hoàn chỉnh ngữ nghĩa tiếng Việt. Hạn chế là các văn bản thông báo học vụ chứa nhiều bullet points không có dấu chấm cuối câu, khiến bộ tách câu gom nhiều dòng vào một chunk dài.
+- **Mô tả & lý do chọn:** Tách sau dấu kết thúc câu bằng regex lookbehind `(?<=[.!?])(?: |\n)`, giữ lại dấu câu và gom tối đa 3 câu vào một chunk. Chiến lược này giữ câu hoàn chỉnh nhưng vẫn nhạy với bullet không có dấu kết thúc, chữ viết tắt và số thập phân.
 - **Code snippet:**
 
 ```python
@@ -102,20 +110,19 @@ chunks = chunker.chunk(document_text)
 **Thành viên 3 — Nguyễn Việt Thành (R3)**
 
 - **Loại chiến lược:** Heading / Markdown Section Chunker (Custom)
-- **Mô tả & lý do chọn:** Tách tài liệu theo các tiêu đề cấp bậc (`#`, `##`, `###`) của định dạng Markdown. Rất phù hợp với tài liệu có mục lục rõ ràng (ví dụ: Quy định học thuật). Tuy nhiên với các tài liệu ngắn hoặc các thông báo chỉ có một heading duy nhất thì chunk sinh ra quá lớn, làm giảm độ tập trung của vector embeddings.
+- **Mô tả & lý do chọn:** Tách tài liệu theo các tiêu đề cấp bậc (`#`, `##`, `###`) của Markdown. Section dài hơn 500 ký tự được chia tiếp bằng `RecursiveChunker`, sau đó heading ban đầu được gắn lại vào từng chunk con. Cách này giữ ngữ cảnh mục mà vẫn khống chế kích thước chunk; hạn chế quan sát được là ở Q1, chunk giới thiệu cùng chủ đề đứng trên chunk chứa thời điểm chính xác.
 - **Code snippet:**
 
 ```python
-class HeadingChunker:
-    def chunk(self, text: str) -> list[str]:
-        sections = re.split(r'\n(?=#{1,3}\s)', text)
-        return [s.strip() for s in sections if s.strip()]
+for heading, body in split_by_heading(document_text):
+    parts = [body] if len(heading) + len(body) <= 500 else RecursiveChunker(500).chunk(body)
+    chunks.extend(f"{heading}\n{part}".strip() for part in parts)
 ```
 
 **Thành viên 4 — Nguyễn Đình Phúc (R4 — Demo & Report Lead)**
 
 - **Loại chiến lược:** RecursiveChunker (`chunk_size=300`, `separators=["\n\n", "\n", " ", ""]`)
-- **Mô tả & lý do chọn:** Sử dụng thuật toán chia đệ quy ưu tiên bảo toàn tính phân tầng của tài liệu: thử tách theo đoạn văn (`\n\n`), nếu quá dài chuyển sang tách dòng (`\n`), rồi đến từ (` `) và ký tự (`""`). Đây là chiến lược tối ưu nhất cho văn bản học vụ vì vừa tôn trọng cấu trúc Markdown, vừa khống chế nghiêm ngặt kích thước chunk dưới 300 ký tự.
+- **Mô tả & lý do chọn:** Sử dụng thuật toán chia đệ quy ưu tiên bảo toàn tính phân tầng của tài liệu: thử tách theo đoạn văn (`\n\n`), nếu quá dài chuyển sang tách dòng (`\n`), rồi đến từ (` `) và ký tự (`""`). Chiến lược này phù hợp với văn bản học vụ vì vừa tôn trọng cấu trúc Markdown, vừa khống chế kích thước chunk dưới 300 ký tự.
 - **Code snippet:**
 
 ```python
@@ -127,14 +134,16 @@ chunks = chunker.chunk(document_text)
 
 | Thành viên             | Chiến lược (Strategy)       | Số chunks | Điểm truy xuất (/10)           | Top-1 Score trung bình | Điểm mạnh                                                                                             | Điểm yếu                                                                                                   |
 | ---------------------- | --------------------------- | --------- | ------------------------------ | ---------------------- | ----------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| Đinh Ngọc Đức (R1)     | FixedSizeChunker (`500/50`) | 31        | 8 / 10                         | 0.8228 (Q1–Q4)         | Dễ cài đặt, kiểm soát kích thước chặt chẽ, điểm cosine cao nhất ở Q1 (0.8787).                        | Cắt ngang câu; Q5 gold chunk không lọt top-3 dù có metadata filter.                                        |
-| Đoàn Tuấn Long (R2)    | SentenceChunker (`max=3`)   | 43        | 9 / 10                         | 0.5229 (Q1–Q4)         | Giữ trọn vẹn ngữ nghĩa câu, không bị rách từ; Q2 gold ở hạng 2.                                       | Nhạy cảm với bullet points; kích thước chunk không đều; score tương đối thấp hơn do dùng lexical embedder. |
-| Nguyễn Việt Thành (R3) | HeadingChunker              | 49        | 10 / 10                        | 0.5485 (Q1–Q4)         | Giữ toàn vẹn tiểu mục; logic thông tin liền mạch; 5/5 relevant.                                       | Các mục dài sinh chunk quá khổ, làm loãng ngữ nghĩa vector.                                                |
-| Nguyễn Đình Phúc (R4)  | RecursiveChunker (`300`)    | 65       | **10 / 10** _(Top similarity)_ | **0.7731** (Q1–Q4)     | Điểm cosine similarity cao nhất (Q1: 0.8788, Q4: 0.8197); chunk cân đối, tôn trọng cấu trúc Markdown. | Thuật toán đệ quy phức tạp hơn; cần định nghĩa bộ separators hợp lý.                                       |
+| Đinh Ngọc Đức (R1)     | FixedSizeChunker (`500/50`) | 31        | 8 / 10                         | 0.8229 (Q1–Q5)         | Dễ cài đặt, kiểm soát kích thước chặt chẽ, điểm cosine cao nhất ở Q1 (0.8787).                        | Cắt ngang câu; Q5 gold chunk không lọt top-3 dù có metadata filter.                                        |
+| Đoàn Tuấn Long (R2)    | SentenceChunker (`max=3`)   | 43        | 9 / 10                         | 0.4970 (Q1–Q5)         | Giữ trọn vẹn ngữ nghĩa câu, không bị rách từ; Q2 gold ở hạng 2.                                       | Nhạy cảm với bullet points; kích thước chunk không đều; score tương đối thấp hơn do dùng lexical embedder. |
+| Nguyễn Việt Thành (R3) | HeadingChunker (`500` + recursive fallback) | 49 | 9 / 10 | 0.5001 (Q1–Q5) | Giữ heading trong mọi chunk con; 5/5 câu có chunk liên quan trong top-3; Q5 lên top-1 sau filter. | Q1 chunk chứa giờ mở SIS chỉ ở hạng 2 nên mất 1 điểm. |
+| Nguyễn Đình Phúc (R4)  | RecursiveChunker (`300`)    | 65        | 9 / 10                         | 0.7533 (Q1–Q5)         | Chunk cân đối, tôn trọng cấu trúc Markdown; Q1–Q4 đều lấy gold ở top-1.                               | Q5 gold ở hạng 2 nên chỉ đạt 1/2; cần định nghĩa bộ separators hợp lý.                                     |
 
 **Chiến lược nào tốt nhất cho chủ đề này? Tại sao?**
 
-> **RecursiveChunker** là chiến lược tốt nhất cho chủ đề Đăng ký học phần VinUni. Ngữ liệu học vụ thực tế chứa sự kết hợp giữa các đoạn văn giải thích, các mốc thời gian dạng bullet points và các bước hướng dẫn thao tác (1, 2, 3...). `RecursiveChunker` khéo léo giữ nguyên từng mục thông tin trọn vẹn ở mức đoạn/dòng trước khi buộc phải chia nhỏ, giúp vector embeddings phản ánh chính xác nhất ngữ nghĩa câu hỏi mà không bị nhiễu do loãng văn bản hoặc đứt gãy thông tin.
+> Theo kết quả retrieval đã ghi nhận, **SentenceChunker, HeadingChunker và RecursiveChunker đồng hạng 9/10**, nhưng lỗi ở các câu khác nhau: Sentence đưa đáp án Q2 lên hạng 2, Heading đưa đáp án Q1 lên hạng 2, còn Recursive đưa đáp án Q5 lên hạng 2. Heading phù hợp cấu trúc tài liệu học vụ và xử lý section dài bằng recursive fallback, nhưng dữ liệu hiện tại không chứng minh một chiến lược thắng tuyệt đối.
+
+> **Giới hạn phép so sánh:** các thành viên đã dùng embedding backend khác nhau, trái với điều kiện kiểm soát lý tưởng là chỉ thay chunker. Vì vậy raw cosine không được dùng để khẳng định tác động riêng của chiến lược chunking; kết luận trên chỉ dựa vào điểm retrieval, hạng của chunk chứa đáp án và độ mạch lạc quan sát được. Muốn kết luận nhân quả, nhóm phải chạy lại cả bốn chiến lược với cùng một embedder.
 
 ---
 
@@ -156,20 +165,86 @@ chunks = chunker.chunk(document_text)
 
 > Cách chấm (theo `docs/SCORING.md`): **2 điểm/câu** — top-3 chứa chunk liên quan + agent trả lời đúng (2), có liên quan nhưng thiếu/không ở top-1 (1), không có trong top-3 (0).
 
-| #   | Câu hỏi                                                   | Chiến lược tốt nhất cho câu này                       | Có chunk liên quan trong top-3?                                | Ghi chú                                                                                   |
+| #   | Câu hỏi                                                   | Kết quả tốt nhất theo hạng gold chunk                 | Kết quả giữa các chiến lược                                    | Ghi chú                                                                                   |
 | --- | --------------------------------------------------------- | ----------------------------------------------------- | -------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| 1   | Cổng đăng ký SIS kỳ Spring 2026 mở lúc nào?               | **RecursiveChunker** (score=0.8788)                   | Có (Hạng 1 & 2)                                                | Các chiến lược đều tìm thấy thông tin liên quan, nhưng Recursive đạt điểm tương đồng vượt trội nhất. |
-| 2   | Các bước đăng ký trên SIS & trạng thái thành công?        | **RecursiveChunker** (score=0.7202)                   | Có (Hạng 1 & 2)                                                | Tách trọn vẹn quy trình các bước mà không bị chia cắt giữa `Registered` và `Selected`.    |
-| 3   | Môn trùng giờ hoặc chưa đủ điều kiện tiên quyết?          | **RecursiveChunker** (score=0.6737)                   | Có (Hạng 1 & 2)                                                | Truy xuất chính xác mục lưu ý về môn trùng giờ và cơ chế tự động chặn của hệ thống SIS.   |
-| 4   | Rút (withdraw) tối đa bao nhiêu tín chỉ?                  | **RecursiveChunker** (score=0.8197)                   | Có (Hạng 1 & 3)                                                | Tìm thấy chunk chứa con số chính xác `18 tín chỉ` và hậu quả khi đạt giới hạn.            |
-| 5   | Trước ngày bắt đầu giảng dạy Spring 2026 cần kiểm tra gì? | **RecursiveChunker + Metadata Filter** (score=0.6739) | Có (Hạng 2 khi có Filter; Văng khỏi Top-3 nếu không có Filter) | Bắt buộc phải dùng `audience: student` để lọc bỏ tài liệu cạnh tranh của giảng viên.      |
+| 1   | Cổng đăng ký SIS kỳ Spring 2026 mở lúc nào?               | Fixed, Sentence và Recursive                          | Ba chiến lược top-1; Heading có chunk trả lời ở hạng 2         | Heading nhận 1/2; không so raw cosine vì các backend embedding khác nhau.                 |
+| 2   | Các bước đăng ký trên SIS & trạng thái thành công?        | Fixed, Heading, Recursive                             | Ba chiến lược top-1; Sentence có gold ở hạng 2                 | Sentence nhận 1/2 theo rubric dù vẫn có chunk trả lời trong top-3.                       |
+| 3   | Môn trùng giờ hoặc chưa đủ điều kiện tiên quyết?          | Đồng hạng: cả 4 chiến lược                            | Cả 4 đều đưa gold chunk lên top-1                              | Câu hỏi có từ khóa và điều kiện rõ ràng.                                                   |
+| 4   | Rút (withdraw) tối đa bao nhiêu tín chỉ?                  | Đồng hạng: cả 4 chiến lược                            | Cả 4 đều đưa chunk chứa `18 tín chỉ` lên top-1                 | Con số và thuật ngữ `withdraw` giúp truy xuất ổn định.                                    |
+| 5   | Trước ngày bắt đầu giảng dạy Spring 2026 cần kiểm tra gì? | Sentence và Heading + metadata filter                 | Sentence/Heading top-1; Recursive top-2; Fixed vắng top-3      | Đây là câu phân biệt rõ nhất tác dụng của audience filter và ranh giới chunk.             |
 
 **Lọc bằng metadata có giúp ích không? Ở câu hỏi nào?**
 
-> **Có, lọc bằng metadata mang tính sống còn và quyết định ở Câu hỏi 5.**
->
-> - **Khi KHÔNG có metadata filter:** Cả hai vị trí dẫn đầu Top-3 đều bị chiếm bởi tài liệu giảng viên `giang-vien-kiem-tra-lich-spring-2026.md` (`audience: faculty`) với điểm rất cao (Top-1: `0.7833`, Top-2: `0.6876`). Hậu quả là chunk Gold của sinh viên (`sinh-vien-add-drop-withdraw-spring-2026.md`) **bị đánh văng hoàn toàn khỏi Top-3**! Nếu sinh viên hỏi câu này, Agent sẽ nhầm lẫn và hướng dẫn sinh viên kiểm tra "lịch giảng dạy và phòng học của giảng viên".
-> - **Khi CÓ metadata filter `{"audience": "student"}`:** Cơ chế tiền lọc (pre-filtering) loại bỏ 100% tài liệu của giảng viên trước khi tính toán tương đồng vector. Nhờ đó, chunk Gold của sinh viên ngay lập tức lọt vào **Top-2 (score `0.6739`)**, giúp Agent trả lời chính xác sinh viên cần kiểm tra lịch học, địa điểm học và việc đồng bộ môn học giữa SIS và Canvas.
+> **Có, metadata filter giúp rõ nhất ở Câu hỏi 5**, vì query không nói người hỏi là sinh viên hay giảng viên và hai tài liệu cạnh tranh dùng nhiều từ giống nhau.
+
+**Bằng chứng A/B đầy đủ của FixedSizeChunker:**
+
+| Lượt chạy | Hạng | `doc_id` | Score | Chunk chứa đáp án? |
+| --- | ---: | --- | ---: | --- |
+| Không filter | 1 | `giang-vien-kiem-tra-lich-spring-2026` | 0.846540 | Không — sai audience |
+| Không filter | 2 | `lich-dang-ky-spring-2026` | 0.776053 | Không |
+| Không filter | 3 | `sinh-vien-add-drop-withdraw-spring-2026` | 0.772247 | Không |
+| `audience: student` | 1 | `lich-dang-ky-spring-2026` | 0.776053 | Không |
+| `audience: student` | 2 | `sinh-vien-add-drop-withdraw-spring-2026` | 0.772247 | Không |
+| `audience: student` | 3 | `huong-dan-dang-ky-hoc-phan` | 0.640615 | Không |
+
+FixedSize loại được kết quả giảng viên nhưng gold chunk chứa đồng thời thông tin SIS/Canvas vẫn không lọt top-3.
+
+**Bằng chứng A/B đầy đủ của HeadingChunker:**
+
+| Lượt chạy | Hạng | `doc_id` | Score | Chunk chứa đáp án? |
+| --- | ---: | --- | ---: | --- |
+| Không filter | 1 | `giang-vien-kiem-tra-lich-spring-2026` | 0.5239 | Không |
+| Không filter | 2 | `giang-vien-kiem-tra-lich-spring-2026` | 0.3115 | Không |
+| Không filter | 3 | `sinh-vien-add-drop-withdraw-spring-2026` | 0.3065 | Có |
+| `audience: student` | 1 | `sinh-vien-add-drop-withdraw-spring-2026` | 0.3065 | Có |
+| `audience: student` | 2 | `sinh-vien-add-drop-withdraw-spring-2026` | 0.2899 | Không |
+| `audience: student` | 3 | `sinh-vien-add-drop-withdraw-spring-2026` | 0.2417 | Không |
+
+Hai chunk giảng viên bị loại trước khi tính top-k, đưa chính chunk sinh viên từ hạng 3 lên hạng 1. Filter không làm đổi similarity của chunk; nó cải thiện thứ hạng và precision theo đối tượng.
+
+**Bằng chứng A/B đầy đủ của SentenceChunker:**
+
+| Lượt chạy | Hạng | `doc_id` | Score | Chunk chứa đáp án? |
+| --- | ---: | --- | ---: | --- |
+| Không filter | 1 | `giang-vien-kiem-tra-lich-spring-2026` | 0.464 | Không — sai audience |
+| Không filter | 2 | `sinh-vien-add-drop-withdraw-spring-2026` | 0.393 | Có |
+| Không filter | 3 | `huong-dan-dang-ky-hoc-phan` | 0.267 | Có một phần |
+| `audience: student` | 1 | `sinh-vien-add-drop-withdraw-spring-2026` | 0.393 | Có |
+| `audience: student` | 2 | `huong-dan-dang-ky-hoc-phan` | 0.267 | Có một phần |
+| `audience: student` | 3 | `huong-dan-dang-ky-hoc-phan` | 0.211 | Không |
+
+Với SentenceChunker, filter loại tài liệu giảng viên ở hạng 1 và đưa gold chunk sinh viên từ hạng 2 lên hạng 1.
+
+**Bằng chứng A/B đầy đủ của RecursiveChunker:**
+
+| Lượt chạy | Hạng | `doc_id` | Score | Chunk chứa đáp án? |
+| --- | ---: | --- | ---: | --- |
+| Không filter | 1 | `giang-vien-kiem-tra-lich-spring-2026` | 0.7833 | Không |
+| Không filter | 2 | `giang-vien-kiem-tra-lich-spring-2026` | 0.6876 | Không |
+| Không filter | 3 | `lich-dang-ky-spring-2026` | 0.6837 | Không |
+| `audience: student` | 1 | `lich-dang-ky-spring-2026` | 0.6837 | Không |
+| `audience: student` | 2 | `sinh-vien-add-drop-withdraw-spring-2026` | 0.6739 | Có |
+| `audience: student` | 3 | `lich-dang-ky-spring-2026` | 0.6720 | Không |
+
+Với RecursiveChunker, gold chunk vắng khỏi top-3 khi không filter và lên hạng 2 sau pre-filter, nên Q5 đạt 1/2.
+
+**Tóm tắt A/B từ bằng chứng hiện có:**
+
+| Chiến lược | Không filter | Có `audience: student` | Kết luận |
+| --- | --- | --- | --- |
+| FixedSize | Top-1 là tài liệu giảng viên | Loại được tài liệu giảng viên nhưng gold chunk vẫn vắng top-3 | Filter đúng đối tượng nhưng không sửa được ranh giới chunk. |
+| Sentence | Top-1 nhầm tài liệu giảng viên | Gold chunk sinh viên lên top-1 | Filter sửa được lỗi sai audience. |
+| Heading | Hai hạng đầu là tài liệu giảng viên; gold ở hạng 3 | Gold chunk sinh viên lên hạng 1 | Có đủ top-3 A/B; filter đưa Q5 từ 1/2 lên 2/2. |
+| Recursive | Gold chunk vắng top-3 | Gold chunk lên hạng 2 | Filter tăng recall cho nội dung sinh viên. |
+
+**Đánh đổi precision/recall:** filter giúp khi biết chắc đối tượng là sinh viên, nhưng có thể loại nhầm tài liệu `all` hoặc tài liệu đối tượng khác chứa chính sách dùng chung. Vì vậy chỉ áp dụng filter cứng khi query hoặc ngữ cảnh người dùng xác định rõ audience; nếu không, nên tìm không filter hoặc hợp nhất nhiều audience hợp lệ.
+
+> Cả bốn báo cáo cá nhân đều đã cung cấp top-3 A/B của Q5. Kết quả nhất quán rằng pre-filter loại tài liệu sai audience, nhưng mức cải thiện phụ thuộc ranh giới chunk: Sentence và Heading đưa gold lên hạng 1, Recursive đưa gold lên hạng 2, còn FixedSize vẫn không lấy được gold chunk trong top-3.
+
+### Failure case thật và hướng sửa
+
+> **Câu hỏng:** Q5 với FixedSize vẫn đạt 0/2 sau khi lọc `audience: student`. **Nguyên nhân:** filter loại đúng tài liệu giảng viên, nhưng top-3 chỉ lấy các chunk cùng chủ đề hoặc mốc thời gian; chunk chứa đồng thời `SIS` và `Canvas` nằm ở section khác nên không lọt vào ngữ cảnh. **Đề xuất:** dùng chunking theo heading có fallback cho section dài, hoặc thử lại kích thước/overlap và tăng `top_k`; sau mỗi thay đổi phải tiếp tục chấm ở cấp nội dung chunk, không chỉ theo `doc_id`.
 
 ---
 
@@ -177,28 +252,28 @@ chunks = chunker.chunk(document_text)
 
 **Những phân tích (insights) hay nhất nhóm sẽ trình bày (6–8 phút):**
 
-1. **Cấu trúc ngữ liệu quyết định thành bại của Chunking:** Tài liệu hành chính/học vụ có cấu trúc dạng danh sách gạch đầu dòng và bảng biểu. `FixedSize` dễ làm đứt gãy thông tin quan trọng (như ngày giờ hoặc điều kiện tiên quyết), trong khi `RecursiveChunker` bảo tồn trọn vẹn ngữ cảnh phân tầng.
-2. **Sức mạnh của Metadata Pre-filtering:** Trong hệ thống RAG thực tế phục vụ nhiều nhóm đối tượng (sinh viên vs giảng viên vs cán bộ), nếu chỉ dựa vào semantic search thì các từ khóa chung (như "Spring 2026", "Lịch học", "Hạn chót") sẽ gây nhầm lẫn nghiêm trọng. Lọc trước theo siêu dữ liệu (`audience`) giúp cô lập không gian tìm kiếm, tăng độ tin cậy của câu trả lời lên mức tuyệt đối.
-3. **Độ tương đồng Cosine kết hợp LLM Prompting:** Khi kết hợp `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2` với Prompt ép buộc trích dẫn nguồn ("Chỉ trả lời dựa trên context được cung cấp"), hệ thống triệt tiêu hoàn toàn ảo giác (hallucination).
+1. **Cấu trúc ngữ liệu quyết định chất lượng Chunking:** Tài liệu hành chính/học vụ có heading, danh sách và bảng. `FixedSize` dễ cắt ngang ý, còn Heading/Recursive giữ ranh giới ngữ nghĩa tốt hơn; section quá dài vẫn cần fallback để tránh làm loãng embedding.
+2. **Sức mạnh và giới hạn của Metadata Pre-filtering:** Lọc `audience` loại tài liệu sai đối tượng trước khi search và tăng precision ở Q5, nhưng không tự sửa được ranh giới chunk kém như trường hợp FixedSize.
+3. **Grounding và trích dẫn nguồn:** Prompt yêu cầu chỉ dùng context và trích dẫn chunk giúp tăng khả năng truy vết, giảm nguy cơ hallucination; nó không bảo đảm loại bỏ hoàn toàn câu trả lời sai nếu retrieval đưa vào context không phù hợp.
 
 **Bài học rút ra khi so sánh trong nhóm:**
 
-> Khi cùng nạp 8 văn bản quy chế nhưng sử dụng các chiến lược khác nhau, nhóm nhận thấy số lượng và chất lượng chunk có sự phân hóa rõ rệt: `FixedSize` (Đức) sinh ra 31 chunks với overlap giữ ngữ cảnh biên, nhưng Q5 thất bại vì gold chunk nằm sai vị trí cắt; `Sentence` (Long) sinh ra 43 chunks giữ trọn câu nhưng kích thước không đồng đều và score thấp hơn; `Heading` (Thành) sinh ra 49 chunks và giữ nguyên cấu trúc tiểu mục nhưng một số chunk dài có thể làm loãng semantic; trong khi `Recursive` (Phúc) sinh ra ~65 chunks gọn gàng, bao phủ sát sao từng ý và đạt điểm cosine similarity trung bình cao nhất (0.7731 trên Q1–Q4).
+> Khi cùng nạp 8 văn bản quy chế nhưng sử dụng các chiến lược khác nhau, nhóm nhận thấy số lượng và chất lượng chunk có sự phân hóa rõ rệt: `FixedSize` (Đức) sinh ra 31 chunks với overlap giữ ngữ cảnh biên, nhưng Q5 thất bại vì gold chunk nằm sai vị trí cắt; `Sentence` (Long) sinh ra 43 chunks giữ trọn câu nhưng kích thước không đồng đều; `Heading` (Thành) sinh ra 49 chunks, giữ heading khi recursive fallback nhưng Q1 chỉ có chunk trả lời ở hạng 2; `Recursive` (Phúc) sinh ra 65 chunks gọn nhưng Q5 chỉ có gold ở hạng 2. Sentence, Heading và Recursive cùng đạt 9/10. Raw cosine chỉ dùng tham khảo vì các thành viên dùng embedding backend khác nhau; so sánh chính dựa trên điểm retrieval và hạng của chunk chứa đáp án.
 
 **Tổng hợp đóng góp cá nhân:**
 
 | Thành viên        | Vai trò                             | Chiến lược                  | Tests | Benchmark (5Q)   | Tự đánh giá |
 | ----------------- | ----------------------------------- | --------------------------- | ----- | ---------------- | ----------- |
-| Đinh Ngọc Đức     | R1 — FixedSize                      | `FixedSizeChunker(500, 50)` | 42/42 | 4/5 (8/10 điểm)  | 58/60       |
-| Đoàn Tuấn Long    | R2 — Sentence                       | `SentenceChunker(max=3)`    | 42/42 | 5/5 (9/10 điểm)  | 58/60       |
-| Nguyễn Việt Thành | R3 — Heading                        | `HeadingChunker`            | 42/42 | 5/5 (10/10 điểm) | 59/60       |
-| Nguyễn Đình Phúc  | R4 — Recursive (Demo & Report Lead) | `RecursiveChunker(300)`     | 42/42 | 5/5 (10/10 điểm) | 60/60       |
+| Đinh Ngọc Đức     | R1 — Data Lead; FixedSize           | `FixedSizeChunker(500, 50)` | 42/42 | 4/5 (8/10 điểm)  | 58/60       |
+| Đoàn Tuấn Long    | R2 — Benchmark Lead; Sentence       | `SentenceChunker(max=3)`    | 42/42 | 5/5 (9/10 điểm)  | 58/60       |
+| Nguyễn Việt Thành | R3 — Strategy Lead; Heading         | `HeadingChunker(500)`       | 42/42 | 5/5 (9/10 điểm)  | 58/60       |
+| Nguyễn Đình Phúc  | R4 — Demo/Report Lead; Recursive    | `RecursiveChunker(300)`     | 42/42 | 5/5 (9/10 điểm)  | 59/60       |
 
 **Nếu làm lại, nhóm sẽ thay đổi gì trong chiến lược dữ liệu (data strategy)?**
 
 > 1. Bổ sung thêm các trường metadata chuyên sâu như `semester` (`Spring-2026`), `degree_level` (`undergraduate`), và `urgency` để tăng độ linh hoạt khi truy vấn nghiệp vụ phức tạp.
 > 2. Xây dựng bộ parser Markdown chuyên dụng cho bảng biểu (Markdown tables) để giữ nguyên tiêu đề cột cho từng dòng dữ liệu, tránh việc các dòng trong bảng bị tách rời khỏi ngữ cảnh tiêu đề.
-> 3. Thống nhất embedding model giữa các thành viên để đảm bảo so sánh công bằng (Đức dùng `gemini-embedding-001`, Long dùng lexical embedder, Phúc dùng `paraphrase-multilingual-MiniLM-L12-v2`).
+> 3. Thống nhất embedding model giữa các thành viên để đảm bảo so sánh công bằng (Đức dùng `gemini-embedding-001`; Long dùng lexical embedder; Thành dùng offline lexical hash embedding; Phúc dùng `paraphrase-multilingual-MiniLM-L12-v2`).
 
 ---
 
@@ -207,7 +282,9 @@ chunks = chunker.chunk(document_text)
 | Tiêu chí                                 | Điểm tự đánh giá |
 | ---------------------------------------- | ---------------- |
 | Lựa chọn tài liệu (Document Set Quality) | 10 / 10          |
-| Thiết kế chiến lược (Strategy Design)    | 15 / 15          |
-| Chất lượng truy xuất (Retrieval Quality) | 10 / 10          |
+| Thiết kế chiến lược (Strategy Design)    | 13 / 15          |
+| Chất lượng truy xuất (Retrieval Quality) | 9 / 10           |
 | Thuyết trình (Demo)                      | 5 / 5            |
-| **Tổng phần nhóm**                       | **40 / 40**      |
+| **Tổng phần nhóm**                       | **37 / 40**      |
+
+> Điểm tự đánh giá giữ ở 37/40 vì các thành viên dùng embedding backend khác nhau, nên phép so sánh chỉ phản ánh kết quả quan sát được và chưa cô lập riêng tác động của chunker. Bằng chứng top-3 A/B của cả bốn chiến lược đã đầy đủ.

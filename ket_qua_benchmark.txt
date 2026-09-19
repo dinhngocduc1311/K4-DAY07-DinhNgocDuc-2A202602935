@@ -1,17 +1,17 @@
 ﻿=== BENCHMARK CÁ NHÂN: FIXED SIZE CHUNKING ===
 Embedding backend: gemini-embedding-001
-Cấu hình: chunk_size=300, overlap=30, top_k=3
-Tài liệu: 8; chunks: 50
-Độ dài chunk trung bình: 277.7
+Cấu hình: chunk_size=500, overlap=50, top_k=3
+Tài liệu: 8; chunks: 31
+Độ dài chunk trung bình: 444.3
 
 === CÂU 1 ===
 Query: Cổng đăng ký SIS kỳ Spring 2026 mở lúc nào?
-  1. score=0.894064 doc_id=lich-dang-ky-spring-2026 chunk=0
+  1. score=0.878719 doc_id=lich-dang-ky-spring-2026 chunk=0
      # Lịch đăng ký học phần kỳ Spring 2026 Office of the Registrar công bố lịch học và quy trình đăng ký môn học cho kỳ Spring 2026. ## Các mốc đăng ký - Lịch học kỳ Spring 2026 được c
-  2. score=0.785918 doc_id=sinh-vien-add-drop-withdraw-spring-2026 chunk=0
+  2. score=0.778719 doc_id=sinh-vien-add-drop-withdraw-spring-2026 chunk=0
      # Hướng dẫn sinh viên Add, Drop và Withdrawal kỳ Spring 2026 ## Mốc thời gian dành cho sinh viên | Nội dung | Thời gian | |---|---| | Bắt đầu giảng dạy Spring 2026 | 09/02/2026 | |
-  3. score=0.760081 doc_id=giang-vien-kiem-tra-lich-spring-2026 chunk=0
-     # Hướng dẫn giảng viên kiểm tra lịch dạy kỳ Spring 2026 Thông báo này dành cho giảng viên, trợ giảng và trợ lý học thuật trước khi học kỳ Spring 2026 bắt đầu. ## Các mốc liên quan 
+  3. score=0.760753 doc_id=giang-vien-kiem-tra-lich-spring-2026 chunk=0
+     # Hướng dẫn giảng viên kiểm tra lịch dạy kỳ Spring 2026 Thông báo này dành cho giảng viên, trợ giảng và trợ lý học thuật trước khi học kỳ Spring 2026 bắt đầu. ## Các mốc liên quan
 Gold document: lich-dang-ky-spring-2026
 Relevant rank: 1
 Agent answer: Cổng đăng ký SIS mở lúc 14:00 ngày 18/12/2025. [1]
@@ -19,12 +19,12 @@ Agent answer: Cổng đăng ký SIS mở lúc 14:00 ngày 18/12/2025. [1]
 
 === CÂU 2 ===
 Query: Đăng ký học phần trên SIS gồm những bước nào? Trạng thái nào mới là đăng ký thành công?
-  1. score=0.806445 doc_id=huong-dan-dang-ky-hoc-phan chunk=3
-     khi trạng thái là “Open”. 3. Tìm theo mã hoặc tên môn; có thể lọc theo Khoa, phần học kỳ (Full/A/B) hoặc thời gian học. 4. Nhấn “Add”, sau đó “Register”. Trạng thái phải là “Regist
-  2. score=0.800894 doc_id=huong-dan-dang-ky-hoc-phan chunk=2
-     có thể tự chỉnh sửa lịch học trên SIS. 6. Với học lại, học dự thính hoặc rút môn, gửi email cho Phòng Quản lý Đào tạo. ## Đăng ký trên SIS 1. Đăng nhập SIS bằng email và mật khẩu V
-  3. score=0.800437 doc_id=lich-dang-ky-spring-2026 chunk=4
-     n VinCore trên SIS theo kế hoạch học tập cá nhân. ## Chuẩn bị trước khi đăng ký Sinh viên cần rà soát Study Plan và yêu cầu chương trình, hoàn thành điều kiện tiên quyết, chuẩn bị 
+  1. score=0.836555 doc_id=huong-dan-dang-ky-hoc-phan chunk=2
+     Full/A/B) hoặc thời gian học. 4. Nhấn “Add”, sau đó “Register”. Trạng thái phải là “Registered”; “Selected” nghĩa là chưa đăng ký thành công. 5. Xác nhận danh sách môn tại “Your Cl
+  2. score=0.811139 doc_id=huong-dan-dang-ky-hoc-phan chunk=1
+     trên hệ thống SIS. 5. Tuân thủ thời gian Add/Drop; trong những ngày đầu học kỳ, sinh viên có thể tự chỉnh sửa lịch học trên SIS. 6. Với học lại, học dự thính hoặc rút môn, gửi emai
+  3. score=0.790896 doc_id=huong-dan-dang-ky-hoc-phan chunk=0
+     # Hướng dẫn thời khóa biểu và đăng ký học phần Trang này hướng dẫn cách chuẩn bị, đăng ký và quản lý kế hoạch học tập tại VinUni. Lịch học được cập nhật theo từng học kỳ với thông
 Gold document: huong-dan-dang-ky-hoc-phan
 Relevant rank: 1
 Agent answer: Đăng nhập SIS, vào Academics → Course Registration, chọn học kỳ, Register khi Open, rồi Add và Register. Trạng thái phải là Registered; Selected nghĩa là chưa thành công. [1]
@@ -32,12 +32,12 @@ Agent answer: Đăng nhập SIS, vào Academics → Course Registration, chọn 
 
 === CÂU 3 ===
 Query: Nếu môn trùng giờ hoặc chưa đủ điều kiện tiên quyết thì SIS xử lý thế nào?
-  1. score=0.803733 doc_id=huong-dan-dang-ky-hoc-phan chunk=5
+  1. score=0.791638 doc_id=huong-dan-dang-ky-hoc-phan chunk=3
      iểm tra SIS thường xuyên để tìm chỗ trống. SIS tự động chặn khi chưa đạt điều kiện tiên quyết và không cho đăng ký các môn trùng giờ. Nếu cho rằng mình đủ điều kiện nhưng vẫn bị ch
-  2. score=0.799936 doc_id=huong-dan-dang-ky-hoc-phan chunk=4
-     ass Schedule”. ## Lỗi thường gặp - Môn học không xuất hiện hoặc đã đủ sĩ số. - Chưa đạt điều kiện tiên quyết. - Trùng giờ học hoặc hạn chế theo cohort. - Yêu cầu học vượt tín chỉ h
-  3. score=0.744085 doc_id=lich-dang-ky-spring-2026 chunk=4
-     n VinCore trên SIS theo kế hoạch học tập cá nhân. ## Chuẩn bị trước khi đăng ký Sinh viên cần rà soát Study Plan và yêu cầu chương trình, hoàn thành điều kiện tiên quyết, chuẩn bị 
+  2. score=0.779361 doc_id=huong-dan-dang-ky-hoc-phan chunk=2
+     Full/A/B) hoặc thời gian học. 4. Nhấn “Add”, sau đó “Register”. Trạng thái phải là “Registered”; “Selected” nghĩa là chưa đăng ký thành công. 5. Xác nhận danh sách môn tại “Your Cl
+  3. score=0.746356 doc_id=huong-dan-dang-ky-hoc-phan chunk=1
+     trên hệ thống SIS. 5. Tuân thủ thời gian Add/Drop; trong những ngày đầu học kỳ, sinh viên có thể tự chỉnh sửa lịch học trên SIS. 6. Với học lại, học dự thính hoặc rút môn, gửi emai
 Gold document: huong-dan-dang-ky-hoc-phan
 Relevant rank: 1
 Agent answer: SIS không cho đăng ký môn trùng giờ và tự động chặn khi chưa đạt điều kiện tiên quyết. Nếu cho rằng mình đủ điều kiện, sinh viên liên hệ Phòng Quản lý Đào tạo. [1]
@@ -45,12 +45,12 @@ Agent answer: SIS không cho đăng ký môn trùng giờ và tự động chặ
 
 === CÂU 4 ===
 Query: Sinh viên được rút (withdraw) tối đa bao nhiêu tín chỉ trong cả chương trình? Sau khi đạt giới hạn thì sao?
-  1. score=0.831586 doc_id=sinh-vien-add-drop-withdraw-spring-2026 chunk=5
+  1. score=0.831586 doc_id=sinh-vien-add-drop-withdraw-spring-2026 chunk=3
      hính thức, điểm W không xuất hiện trên bảng điểm. - Sinh viên được rút tối đa 18 tín chỉ trong toàn chương trình. Khi đạt giới hạn, sinh viên phải tiếp tục học và nhận điểm cho môn
-  2. score=0.813405 doc_id=quy-dinh-hoc-thuat-dai-hoc chunk=12
-     rmance. The maximum withdrawal allowance is 18 credits over the entire program; after reaching it, students must remain enrolled.
-  3. score=0.779999 doc_id=sinh-vien-add-drop-withdraw-spring-2026 chunk=3
-     ổi trong giai đoạn này không xuất hiện trên bảng điểm. Sau thời gian Add/Drop, hủy môn được xem là Withdrawal: - Điểm “W – Withdrawn” xuất hiện trên bảng điểm khi sinh viên đã đăng
+  2. score=0.809109 doc_id=quy-dinh-hoc-thuat-dai-hoc chunk=7
+     ime. After that point, withdrawal is not allowed and the student is graded on course performance. The maximum withdrawal allowance is 18 credits over the entire program; after reac
+  3. score=0.799476 doc_id=sinh-vien-add-drop-withdraw-spring-2026 chunk=2
+     ợc xem là Withdrawal: - Điểm “W – Withdrawn” xuất hiện trên bảng điểm khi sinh viên đã đăng ký môn rồi nộp yêu cầu rút chính thức. - Môn có điểm W được tính là một lần đăng ký. Nếu
 Gold document: sinh-vien-add-drop-withdraw-spring-2026
 Relevant rank: 1
 Agent answer: Sinh viên được rút tối đa 18 tín chỉ trong toàn chương trình. Khi đạt giới hạn, sinh viên phải tiếp tục học và nhận điểm cho môn đã đăng ký. [1]
@@ -60,25 +60,25 @@ Agent answer: Sinh viên được rút tối đa 18 tín chỉ trong toàn chư�
 Query: Trước ngày bắt đầu giảng dạy Spring 2026, tôi cần kiểm tra những gì?
 
 A — Không filter:
-  1. score=0.864947 doc_id=giang-vien-kiem-tra-lich-spring-2026 chunk=0
-     # Hướng dẫn giảng viên kiểm tra lịch dạy kỳ Spring 2026 Thông báo này dành cho giảng viên, trợ giảng và trợ lý học thuật trước khi học kỳ Spring 2026 bắt đầu. ## Các mốc liên quan 
-  2. score=0.796817 doc_id=lich-dang-ky-spring-2026 chunk=0
+  1. score=0.846540 doc_id=giang-vien-kiem-tra-lich-spring-2026 chunk=0
+     # Hướng dẫn giảng viên kiểm tra lịch dạy kỳ Spring 2026 Thông báo này dành cho giảng viên, trợ giảng và trợ lý học thuật trước khi học kỳ Spring 2026 bắt đầu. ## Các mốc liên quan
+  2. score=0.776053 doc_id=lich-dang-ky-spring-2026 chunk=0
      # Lịch đăng ký học phần kỳ Spring 2026 Office of the Registrar công bố lịch học và quy trình đăng ký môn học cho kỳ Spring 2026. ## Các mốc đăng ký - Lịch học kỳ Spring 2026 được c
-  3. score=0.765308 doc_id=sinh-vien-add-drop-withdraw-spring-2026 chunk=1
-     | 06/03/2026 | | Hạn hủy môn (Drop) | 13/03/2026 | ## Sinh viên cần kiểm tra trước học kỳ Sinh viên phải xác nhận lịch học, bao gồm thời gian và địa điểm, trước ngày bắt đầu giảng 
+  3. score=0.772247 doc_id=sinh-vien-add-drop-withdraw-spring-2026 chunk=0
+     # Hướng dẫn sinh viên Add, Drop và Withdrawal kỳ Spring 2026 ## Mốc thời gian dành cho sinh viên | Nội dung | Thời gian | |---|---| | Bắt đầu giảng dạy Spring 2026 | 09/02/2026 | |
 
 B — Filter {'audience': 'student'}:
-  1. score=0.796817 doc_id=lich-dang-ky-spring-2026 chunk=0
+  1. score=0.776053 doc_id=lich-dang-ky-spring-2026 chunk=0
      # Lịch đăng ký học phần kỳ Spring 2026 Office of the Registrar công bố lịch học và quy trình đăng ký môn học cho kỳ Spring 2026. ## Các mốc đăng ký - Lịch học kỳ Spring 2026 được c
-  2. score=0.765308 doc_id=sinh-vien-add-drop-withdraw-spring-2026 chunk=1
-     | 06/03/2026 | | Hạn hủy môn (Drop) | 13/03/2026 | ## Sinh viên cần kiểm tra trước học kỳ Sinh viên phải xác nhận lịch học, bao gồm thời gian và địa điểm, trước ngày bắt đầu giảng 
-  3. score=0.752511 doc_id=sinh-vien-add-drop-withdraw-spring-2026 chunk=0
+  2. score=0.772247 doc_id=sinh-vien-add-drop-withdraw-spring-2026 chunk=0
      # Hướng dẫn sinh viên Add, Drop và Withdrawal kỳ Spring 2026 ## Mốc thời gian dành cho sinh viên | Nội dung | Thời gian | |---|---| | Bắt đầu giảng dạy Spring 2026 | 09/02/2026 | |
+  3. score=0.640615 doc_id=huong-dan-dang-ky-hoc-phan chunk=0
+     # Hướng dẫn thời khóa biểu và đăng ký học phần Trang này hướng dẫn cách chuẩn bị, đăng ký và quản lý kế hoạch học tập tại VinUni. Lịch học được cập nhật theo từng học kỳ với thông
 Gold document: sinh-vien-add-drop-withdraw-spring-2026
-Relevant rank: 2
-Agent answer: Sinh viên phải xác nhận thời gian, địa điểm học và kiểm tra các môn đã đăng ký trên SIS được đồng bộ, hiển thị đúng trên Canvas. Nếu môn có trên SIS nhưng không xuất hiện trên Canvas thì báo Phòng Quản lý Đào tạo. [2]
-Điểm: 1/2
+Relevant rank: không có trong top-3
+Agent answer: Không tìm thấy đủ thông tin trong ngữ cảnh truy xuất.
+Điểm: 0/2
 
 === TỔNG KẾT ===
-Top-3 có chunk chứa đáp án: 5/5
-Điểm truy xuất: 9/10
+Top-3 có chunk chứa đáp án: 4/5
+Điểm truy xuất: 8/10

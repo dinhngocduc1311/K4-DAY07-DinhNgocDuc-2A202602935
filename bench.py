@@ -12,7 +12,7 @@ from src import (
 )
 
 CORPUS_DIR = Path("data/vinuni-course-registration")
-CHUNK_SIZE, OVERLAP, TOP_K = 300, 30, 3
+CHUNK_SIZE, OVERLAP, TOP_K = 500, 50, 3
 
 BENCHMARKS = [
     {
